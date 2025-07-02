@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    text-align: center;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+h1 {    
+    color: #333;
+}
+
+.chat-box {
+    height: 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.input-box {
+    margin-top: 10px;
+    display: flex;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 20%;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+/* Navbar Text Color */
+.navbar-dark .navbar-nav .nav-link {
+    color: #f8f9fa !important;  /* Light gray for better visibility */
+    font-weight: 500; /* Slightly bold */
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffc107 !important; /* Yellow on hover */
+}
+
+/* Navbar Brand */
+.navbar-dark .navbar-brand {
+    color: #ffffff !important;  /* White color for visibility */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* View Complaints Button */
+.navbar .btn-outline-light {
+    color: #719dca !important; /* Light text */
+    border-color: #0c131a; /* Light border */
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar .btn-outline-light:hover {
+    background-color: #ffc107 !important; /* Yellow on hover */
+    color: #212529 !important; /* Dark text */
+}

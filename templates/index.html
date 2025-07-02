@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RailMadad AI Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>RailMadad AI Chatbot</h1>
+        <p>This chatbot analyzes railway complaints from Twitter, classifies them, and files them with RailMadad for efficient resolution.</p>
+        
+        <div class="chat-box" id="chatBox">
+            <p><strong>Bot:</strong> Hello! How can I assist you with your railway complaint?</p>
+        </div>
+        
+        <form id="chatForm" class="input-box">
+            <input type="text" id="userInput" name="complaint" class="form-control" placeholder="Type your complaint..." required>
+            <button type="submit" class="btn btn-primary mt-2">Send</button>
+        </form>
+        
+        <button onclick="window.location.href='/admin_login'" class="view-complaints">View Complaints</button>
+    </div>
+
+    
+    <!-- Bootstrap Toast Notification -->
+    <div class="position-fixed top-0 end-0 p-3">
+        <div id="toastMessage" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <span id="toastText">Your complaint category will be shown here.</span>
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap & Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html> 

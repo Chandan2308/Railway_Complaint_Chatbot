@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Complaints</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Submitted Complaints</h1>
+        <div class="complaints-box" id="complaintsBox">
+            <!-- Complaints will be dynamically added here -->
+        </div>
+        <button onclick="window.location.href='/'" class="back-button">Back to Chat</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (document.getElementById("complaintsBox")) {
+                loadComplaints();
+            }
+        });
+    </script>
+</body>
+</html>

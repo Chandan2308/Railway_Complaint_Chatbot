@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - RailMadad AI Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">RailMadad AI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center">About RailMadad AI Chatbot</h1>
+        <p class="text-center text-muted">Making railway complaint filing faster and easier.</p>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h3>What is RailMadad AI?</h3>
+                <p>The RailMadad AI Chatbot is designed to help railway passengers quickly file complaints regarding issues they face during their journey. It analyzes railway-related complaints from Twitter and other sources, categorizes them based on priority, and files them efficiently with RailMadad for resolution.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>How to Use?</h3>
+                <ol>
+                    <li>Type your complaint in the chatbot on the homepage.</li>
+                    <li>The chatbot analyzes your complaint and assigns a category.</li>
+                    <li>Your complaint is then stored and can be reviewed by railway authorities.</li>
+                    <li>You will receive a response regarding your complaint acknowledgement.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="/" class="btn btn-primary">Go to Chatbot</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
